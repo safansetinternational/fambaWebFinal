@@ -28,7 +28,7 @@ export function ContactSection() {
             <div className="space-y-3 sm:text-lg">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                <span>+263 7 XX XXX XXX</span>
+                <span>+263 778 179 409</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
@@ -49,7 +49,7 @@ export function ContactSection() {
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-secondary" />
-                <span>+263 7 XX XXX XXX</span>
+                <span>+263 778 179 409</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-secondary" />
