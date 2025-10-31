@@ -33,14 +33,6 @@ const services = [
     badge: "Coming Soon",
     color: "primary",
   },
-  {
-    icon: Building2,
-    title: "Corporate & Fleet Solutions",
-    description:
-      "Custom solutions for companies, NGOs, and organizations that move teams or goods daily. We handle the logistics — you focus on your work.",
-    features: ["Business transport", "Fleet management", "Custom solutions"],
-    color: "secondary",
-  },
 ]
 
 export function ServicesSection() {
@@ -79,18 +71,18 @@ export function ServicesSection() {
                 </div>
               </div>
 
-              <p className="text-muted-foreground mb-6 leading-relaxed">{service.description}</p>
+              <p className="text-muted-foreground mb-6 leading-relaxed sm:text-lg">{service.description}</p>
 
-              <ul className="space-y-2 mb-6">
+              <ul className="space-y-2 mb-6 ">
                 {service.features.map((feature, idx) => (
-                  <li key={idx} className="flex items-center gap-2 text-sm">
+                  <li key={idx} className="flex items-center gap-2 sm:text-lg">
                     <div className={`w-1.5 h-1.5 rounded-full bg-${service.color}`} />
                     <span>{feature}</span>
                   </li>
                 ))}
               </ul>
 
-              {index === 1 && (
+              {index === 10 && (
                 <Button variant="outline" className="w-full bg-transparent">
                   Become a Driver
                 </Button>

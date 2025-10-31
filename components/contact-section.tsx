@@ -22,17 +22,17 @@ export function ContactSection() {
               <MessageCircle className="h-7 w-7 text-primary" />
             </div>
             <h3 className="text-xl font-bold font-[family-name:var(--font-poppins)] mb-4">Customer Support</h3>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-muted-foreground mb-6 leading-relaxed sm:text-lg">
               Need help with the app, payments, or your account? We're available 24/7.
             </p>
-            <div className="space-y-3 text-sm">
+            <div className="space-y-3 sm:text-lg">
               <div className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
                 <span>+263 7 XX XXX XXX</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>support@famba247.co.zw</span>
+                <span>support@famba247.com</span>
               </div>
             </div>
           </Card>
@@ -43,7 +43,7 @@ export function ContactSection() {
               <Phone className="h-7 w-7 text-secondary" />
             </div>
             <h3 className="text-xl font-bold font-[family-name:var(--font-poppins)] mb-4">Join as a Driver</h3>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-muted-foreground mb-6 leading-relaxed sm:text-lg">
               Ready to start earning with Famba247? Fill out the registration form or visit us.
             </p>
             <div className="space-y-3 text-sm">
@@ -53,10 +53,10 @@ export function ContactSection() {
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-secondary" />
-                <span>drivers@famba247.co.zw</span>
+                <span>drivers@famba247.com</span>
               </div>
             </div>
-            <Button className="w-full mt-6 bg-secondary hover:bg-secondary/90">Register Now</Button>
+            {/* <Button className="w-full mt-6 bg-secondary hover:bg-secondary/90">Register Now</Button> */}
           </Card>
 
           {/* Partnerships */}
@@ -65,13 +65,13 @@ export function ContactSection() {
               <Mail className="h-7 w-7 text-primary" />
             </div>
             <h3 className="text-xl font-bold font-[family-name:var(--font-poppins)] mb-4">Business & Partnerships</h3>
-            <p className="text-muted-foreground mb-6 leading-relaxed">
+            <p className="text-muted-foreground mb-6 leading-relaxed sm:text-lg">
               Let's build Zimbabwe's mobility future together.
             </p>
             <div className="space-y-3 text-sm">
               <div className="flex items-center gap-2">
                 <Mail className="h-4 w-4 text-primary" />
-                <span>partnerships@famba247.co.zw</span>
+                <span>partnerships@famba247.com</span>
               </div>
             </div>
           </Card>
@@ -95,15 +95,26 @@ export function ContactSection() {
             <div>
               <h4 className="text-lg font-semibold font-[family-name:var(--font-poppins)] mb-4">Stay Connected</h4>
               <div className="flex gap-4">
-                <Button size="icon" variant="outline" className="rounded-full bg-transparent">
-                  <Facebook className="h-5 w-5" />
-                </Button>
-                <Button size="icon" variant="outline" className="rounded-full bg-transparent">
+                <a
+                  href="https://www.facebook.com/profile.php?id=61581816032731"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="Facebook"
+                >
+                  <Button
+                    size="icon"
+                    variant="outline"
+                    className="rounded-full bg-transparent hover:text-primary transition-colors"
+                  >
+                    <Facebook className="h-5 w-5" />
+                  </Button>
+                </a>
+                {/* <Button size="icon" variant="outline" className="rounded-full bg-transparent">
                   <Instagram className="h-5 w-5" />
                 </Button>
                 <Button size="icon" variant="outline" className="rounded-full bg-transparent">
                   <Twitter className="h-5 w-5" />
-                </Button>
+                </Button> */}
               </div>
               <p className="text-sm text-muted-foreground mt-4">www.famba247.com</p>
             </div>

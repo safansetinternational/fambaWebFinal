@@ -6,20 +6,15 @@ import { AboutSection } from "@/components/about-section"
 import { ServicesSection } from "@/components/services-section"
 import { CommunitySection } from "@/components/community-section"
 import { ContactSection } from "@/components/contact-section"
+import { DownloadSection } from "@/components/download-section"
 import { Footer } from "react-day-picker"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
-      <Header />
-      <HeroSection />
+      <>
+       <HeroSection />
       <WhyChooseSection />
-      <HowItWorksSection />
-      <AboutSection />
-      <ServicesSection />
-      <CommunitySection />
-      <ContactSection />
-      <Footer />
-    </main>
+      <section id="download"><DownloadSection /></section>
+    </>
   )
 }
