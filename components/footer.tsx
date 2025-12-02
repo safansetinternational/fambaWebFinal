@@ -1,6 +1,6 @@
 
 import Link from "next/link"
-import { Facebook, Instagram, Twitter, MapPin, Phone, Mail } from "lucide-react"
+import { Facebook, MapPin, Phone, Mail } from "lucide-react"
 
 export function Footer() {
   return (
@@ -21,7 +21,7 @@ export function Footer() {
               </h2>
             </div>
             <p className="text-background/70 leading-relaxed max-w-md ">
-              Zimbabwe’s proudly local ride-hailing app — built for our roads,
+              Zimbabwe's proudly local ride-hailing app — built for our roads,
               our people, and our hustle. Safe, fast, and always on.
             </p>
           </div>
@@ -40,7 +40,6 @@ export function Footer() {
                   Services
                 </Link>
               </li>
-
               <li>
                 <Link href="/contact" className="hover:text-primary transition-colors">
                   Contact
@@ -77,18 +76,29 @@ export function Footer() {
               >
                 <Facebook className="h-5 w-5" />
               </a>
-              {/* <Link href="#" aria-label="Instagram" className="hover:text-primary transition-colors">
-                <Instagram className="h-5 w-5" />
-              </Link>
-              <Link href="#" aria-label="Twitter" className="hover:text-primary transition-colors">
-                <Twitter className="h-5 w-5" />
-              </Link> */}
             </div>
           </div>
         </div>
 
+        {/* Legal Links */}
+        <div className="border-t border-background/20 pt-6 pb-4">
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-background/70 mb-4">
+            <Link href="/privacy-policy" className="hover:text-primary transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-background/40">•</span>
+            <Link href="/terms-and-conditions" className="hover:text-primary transition-colors">
+              Terms & Conditions
+            </Link>
+            <span className="text-background/40">•</span>
+            <Link href="/contact" className="hover:text-primary transition-colors">
+              Support
+            </Link>
+          </div>
+        </div>
+
         {/* Bottom Bar */}
-        <div className="border-t border-background/20 pt-6 text-center text-sm text-background/70">
+        <div className="text-center text-sm text-background/70">
           <p>
             &copy; {new Date().getFullYear()} <span className="font-semibold text-primary">Famba247</span>.
             All rights reserved. Built with pride in Zimbabwe 🇿🇼
