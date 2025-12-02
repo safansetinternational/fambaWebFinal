@@ -4,6 +4,7 @@ import { Facebook, MapPin, Phone, Mail } from "lucide-react"
 
 export function Footer() {
   return (
+    
     <footer className="bg-foreground text-background pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
