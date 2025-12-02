@@ -4,7 +4,7 @@ import { Facebook, MapPin, Phone, Mail } from "lucide-react"
 
 export function Footer() {
   return (
-    
+
     <footer className="bg-foreground text-background pt-16 pb-8">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
@@ -102,7 +102,7 @@ export function Footer() {
         <div className="text-center text-sm text-background/70">
           <p>
             &copy; {new Date().getFullYear()} <span className="font-semibold text-primary">Famba247</span>.
-            All rights reserved. Built with pride in Zimbabwe 🇿🇼
+            All rights reserved. Built with pride in Zimbabwe 🇿🇼  
           </p>
         </div>
       </div>
