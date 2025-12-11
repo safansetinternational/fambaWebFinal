@@ -56,10 +56,10 @@ export function DownloadSection() {
 
             {/* Store Buttons */}
             <div className="flex justify-center mt-8 gap-4">
-              <a href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://apps.apple.com/us/app/famba247/id6751111681" target="_blank" rel="noopener noreferrer">
                 <Image src="/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917.svg" alt="App Store" width={150} height={45} />
               </a>
-              <a href="https://play.google.com" target="_blank" rel="noopener noreferrer">
+              <a href="https://play.google.com/store/apps/details?id=net.fantracker.famba_rider" target="_blank" rel="noopener noreferrer">
                 <Image src="/GetItOnGooglePlay_Badge_Web_color_English-01.svg" alt="Google Play" width={150} height={45} />
               </a>
             </div>
